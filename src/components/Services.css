@@ -1,0 +1,144 @@
+.services-page {
+  margin-top: 60px;
+  padding: 60px 0;
+  background: #f8f9fa;
+  min-height: calc(100vh - 60px);
+}
+
+/* Header Section */
+.services-header {
+  margin-bottom: 60px;
+}
+
+.services-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Services Grid */
+.services-grid {
+  margin-bottom: 60px;
+}
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.hovered {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .card-body {
+  padding: 40px 30px;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  transition: all 0.3s ease;
+  font-size: 32px;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.service-btn {
+  border-width: 2px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action Section */
+.cta-section {
+  margin-top: 40px;
+}
+
+.cta-container {
+  background: linear-gradient(135deg, #0069D9 0%, #0056b3 100%);
+  padding: 60px 40px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 105, 217, 0.3);
+}
+
+.cta-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  background: white;
+  color: #0069D9;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background: #f8f9fa;
+  color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}

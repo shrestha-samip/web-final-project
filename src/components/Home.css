@@ -1,0 +1,133 @@
+.home {
+  margin-top: 60px;
+  background: #f7f7f7;
+}
+
+/* Carousel Section */
+.carousel-section {
+  margin-bottom: 50px;
+}
+
+.carousel-custom {
+  position: relative;
+  max-width: 100%;
+}
+
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Cards Section */
+.cards-section {
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Decorative Blobs */
+.blob1 svg {
+  position: absolute;
+  width: 22%;
+  left: -9%;
+  z-index: -1;
+}
+
+.blob2 svg {
+  position: absolute;
+  top: 145%;
+  width: 22%;
+  left: 90%;
+  z-index: -1;
+}
+
+/* About Section */
+.about-section {
+  margin: 50px 0;
+  padding: 40px 0;
+}
+
+.about-content h1 {
+  color: #0069D9;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Waves */
+.waves {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Speciality Section */
+.speciality-section {
+  background-color: #d1e8ff;
+  padding: 50px 0;
+  margin-top: -10px;
+}
+
+.speciality-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #0069D9;
+  text-align: center;
+  padding: 20px;
+}
+
+.speciality-card i {
+  font-size: 50px;
+  background-color: #0069D9;
+  padding: 30px;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speciality-card i:hover {
+  background-color: #0e73de;
+  transform: scale(1.1);
+}
+
+.speciality-card h5 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 18px;
+}
+
