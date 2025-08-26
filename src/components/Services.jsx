@@ -62,7 +62,6 @@ const Services = () => {
   return (
     <div className="services-page">
       <Container>
-        {/* Header Section */}
         <Row className="services-header">
           <Col md={12} className="text-center">
             <h1>Our Medical Services</h1>
@@ -72,7 +71,6 @@ const Services = () => {
           </Col>
         </Row>
 
-        {/* Services Grid */}
         <Row className="services-grid">
           {services.map((service) => (
             <Col key={service.id} lg={4} md={6} sm={12} className="mb-4">
@@ -119,7 +117,6 @@ const Services = () => {
           ))}
         </Row>
 
-        {/* Call to Action */}
         <Row className="cta-section">
           <Col md={12} className="text-center">
             <div className="cta-container">

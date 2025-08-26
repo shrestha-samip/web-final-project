@@ -47,7 +47,6 @@ const About = () => {
   return (
     <div className="about-page">
       <Container>
-        {/* Hero Section */}
         <Row className="about-hero">
           <Col md={12} className="text-center">
             <h1 className="about-title">{aboutContent.title}</h1>
@@ -55,7 +54,6 @@ const About = () => {
           </Col>
         </Row>
 
-        {/* Main Content */}
         <Row className="about-content">
           <Col lg={8} md={12}>
             <div className="about-description">
@@ -83,7 +81,6 @@ const About = () => {
           </Col>
         </Row>
 
-        {/* Stats Section */}
         <Row className="stats-section">
           {aboutContent.stats.map((stat, index) => (
             <Col key={index} lg={3} md={6} sm={12} className="mb-4">
@@ -95,7 +92,6 @@ const About = () => {
           ))}
         </Row>
 
-        {/* Values Section */}
         <Row className="values-section">
           <Col md={12} className="text-center">
             <h2>Our Core Values</h2>
@@ -117,7 +113,6 @@ const About = () => {
           ))}
         </Row>
 
-        {/* Additional Info */}
         <Row className="additional-info">
           <Col md={12}>
             <div className="info-card">

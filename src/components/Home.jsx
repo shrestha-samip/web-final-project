@@ -53,7 +53,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Carousel Section */}
       <div className="carousel-section">
         <Carousel 
           activeIndex={currentSlide}
@@ -72,7 +71,6 @@ const Home = () => {
         </Carousel>
       </div>
 
-      {/* Service Cards Section */}
       <Container className="cards-section">
         <Row className="justify-content-center">
           {serviceCards.map((card) => (
@@ -94,7 +92,6 @@ const Home = () => {
         </Row>
       </Container>
 
-      {/* Decorative Blobs */}
       <div className="blob1">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#D1E8FF" d="M54.8,-40.9C69.3,-25.6,78.1,-2.9,73.6,16.8C69.1,36.5,51.4,53.3,29.9,64.7C8.3,76.1,-17.1,82.2,-34.1,73.1C-51.1,64.1,-59.7,39.8,-64.4,15.8C-69,-8.3,-69.7,-32.2,-58.3,-46.9C-46.9,-61.6,-23.5,-67,-1.6,-65.7C20.2,-64.4,40.3,-56.3,54.8,-40.9Z" transform="translate(100 100)" />
@@ -106,7 +103,6 @@ const Home = () => {
         </svg>
       </div>
 
-      {/* About Us Section */}
       <Container className="about-section mx-3">
         <Row className="align-items-center">
           <Col lg={8} md={12}>
@@ -128,12 +124,10 @@ const Home = () => {
         </Row>
       </Container>
 
-      {/* Wave SVG */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="waves">
         <path fill="#D1E8FF" fillOpacity="1" d="M0,128L24,133.3C48,139,96,149,144,165.3C192,181,240,203,288,224C336,245,384,267,432,250.7C480,235,528,181,576,138.7C624,96,672,64,720,42.7C768,21,816,11,864,48C912,85,960,171,1008,197.3C1056,224,1104,192,1152,186.7C1200,181,1248,203,1296,202.7C1344,203,1392,181,1416,170.7L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
       </svg>
 
-      {/* Specialities Section */}
       <div className="speciality-section">
         <Container>
           <Row className="justify-content-center">

@@ -28,7 +28,6 @@ const Profile = () => {
       [name]: value
     }));
     
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prevState => ({
         ...prevState,
@@ -75,7 +74,6 @@ const Profile = () => {
       setIsSaved(true);
       setIsEditing(false);
       
-      // Hide success message after 3 seconds
       setTimeout(() => {
         setIsSaved(false);
       }, 3000);

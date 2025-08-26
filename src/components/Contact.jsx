@@ -45,7 +45,6 @@ const Contact = () => {
       [name]: value
     }));
     
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prevState => ({
         ...prevState,
@@ -96,11 +95,9 @@ const Contact = () => {
 
     setIsLoading(true);
     
-    // Simulate API call
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
-      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -112,7 +109,6 @@ const Contact = () => {
       setIsSubmitted(true);
       setErrors({});
       
-      // Hide success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
@@ -127,7 +123,6 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <Container>
-        {/* Contact Info Section */}
         <Row className="contact-info-section">
           <Col md={12}>
             <h1 className="contact-title">Contact Info</h1>
@@ -145,7 +140,6 @@ const Contact = () => {
           ))}
         </Row>
 
-        {/* Contact Form Section */}
         <Row className="contact-form-section">
           <Col lg={8} md={12} className="mx-auto">
             <div className="form-container">
