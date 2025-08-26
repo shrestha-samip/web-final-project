@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from '../features/userSlice.jsx';
+import { login } from '../features/userSlice.js';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './Contact.css';
 
