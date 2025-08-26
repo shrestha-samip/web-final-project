@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { login } from '../features/userSlice.jsx';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './Contact.css';
 
@@ -14,6 +16,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const dispatch = useDispatch();
 
   const contactInfo = [
     {
@@ -44,7 +47,7 @@ const Contact = () => {
       ...prevState,
       [name]: value
     }));
-    
+
     if (errors[name]) {
       setErrors(prevState => ({
         ...prevState,
@@ -88,16 +91,18 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
 
     setIsLoading(true);
-    
+
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
+      dispatch(login({ name: formData.name, email: formData.email }));
+
       setFormData({
         name: '',
         email: '',
@@ -105,14 +110,14 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-      
+
       setIsSubmitted(true);
       setErrors({});
-      
+
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
-      
+
     } catch (error) {
       console.error('Error submitting form:', error);
     } finally {
@@ -128,7 +133,7 @@ const Contact = () => {
             <h1 className="contact-title">Contact Info</h1>
           </Col>
         </Row>
-        
+
         <Row className="contact-icons-section">
           {contactInfo.map((info) => (
             <Col key={info.id} lg={3} md={6} sm={12} className="mb-4">
@@ -145,7 +150,7 @@ const Contact = () => {
             <div className="form-container">
               <h2>Send us a Message</h2>
               <p className="form-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-              
+
               {isSubmitted && (
                 <Alert variant="success" className="mt-3">
                   Thank you for your message! We'll get back to you soon.
@@ -239,9 +244,9 @@ const Contact = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Button 
-                  variant="primary" 
-                  type="submit" 
+                <Button
+                  variant="primary"
+                  type="submit"
                   className="submit-btn"
                   disabled={isLoading}
                 >
